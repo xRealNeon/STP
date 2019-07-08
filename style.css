@@ -1,0 +1,137 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+#bgVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    filter: blur(8px);
+    z-index: -1;
+}
+
+#card h1 {
+    margin: 0;
+    padding: 0;
+}
+
+
+#wrapper {
+    background-color: blue;
+    margin-left: auto;
+    margin-right: auto;
+    width: 550px;
+}
+
+#content {
+    margin: 0;
+    padding: 0;
+
+    width: 550px;
+
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    position: fixed;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#copy {
+    margin: 0;
+    margin-top: 30px;
+    padding: 0;
+}
+
+#card {
+    margin: 0;
+    padding: 20px;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ecf0f1;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-radius: 6px;
+    color: #2c3e50;
+}
+
+#buttondl {
+    transition: 0.5s;
+    padding: 10px;
+    background-color: #3498db;
+    text-decoration: none;
+    color: #ecf0f1;
+    border-radius: 3px;
+}
+
+#buttondl:hover {
+    background-color: #2980b9;
+}
+
+#buttondli {
+    transition: 0.5s;
+    padding: 10px;
+    background-color: #2ecc71;
+    text-decoration: none;
+    color: #ecf0f1;
+    border-radius: 3px;
+}
+
+#buttondli:hover {
+    background-color: #27ae60;
+}
+
+#buttonyt {
+    transition: 0.5s;
+    padding: 10px;
+    background-color: #e74c3c;
+    text-decoration: none;
+    color: #ecf0f1;
+    border-radius: 3px;
+}
+
+#buttonyt:hover {
+    background-color: #c0392b;
+}
+
+.fa-download {
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+}
+
+#buttondl:hover .fa-download {
+    transition: 1s;
+    transform: rotate(360deg);
+}
+
+.fa-youtube {
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+}
+
+#buttonyt:hover .fa-youtube {
+    transition: 1s;
+    transform: rotate(360deg);
+}
+
+.fa-cloud-download-alt {
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+}
+
+#buttondli:hover .fa-cloud-download-alt {
+    transition: 1s;
+    transform: rotate(360deg);
+}

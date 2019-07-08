@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Minecraft, resourcepacks24.de, Resourcepack">
+    <meta name="author" content="NeoCode">
+    <meta name="description" content="Fresh new look for Minecraft">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="icon.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lity/2.3.1/lity.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lity/2.3.1/lity.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Smooth Texture Pack</title>
+</head>
+
+<body oncontextmenu="return false;">
+    <video autoplay muted loop id="bgVideo">
+        <source src="background.mp4" type="video/mp4">
+    </video>
+    <div id="wrapper">
+        <div id="wrapper-h">
+            <div id="content">
+                <div id="card">
+                    <h1>Smooth Texture Pack</h1>
+                    <p>Fresh new look for Minecraft</p>
+                    <a id="buttondl" href="https://resourcepacks24.de/download/956341" target="_blank">Download <i
+                            class="fas fa-download"></i></a>
+                    <a id="buttondli" href="SmoothTP Installer.jar" target="_blank">Download Installer <i
+                            class="fas fa-cloud-download-alt"></i></a>
+                    <a id="buttonyt" href="https://www.youtube.com/watch?v=Q6nausaVYZ8" data-lity>Watch
+                        Trailer <i class="fab fa-youtube"></i></a>
+
+                    <p id="copy">&copy;NeoCode</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script>
+    document.getElementById("bgVideo").playbackRate = 0.75;
+    document.getElementById("copy").innerHTML = "&copy; " + new Date().getFullYear() + " NeoCode";
+    $(document).on('lity:open', function (event, instance) {
+        document.getElementById("bgVideo").pause();
+    });
+    $(document).on('lity:close', function (event, instance) {
+        document.getElementById("bgVideo").play();
+    });
+</script>
+
+</html>
