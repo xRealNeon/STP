@@ -41,6 +41,14 @@
         </div>
     </div>
 
+    <div id="loading">
+        <div class="lds-ring">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
 </body>
 <script>
     document.getElementById("bgVideo").playbackRate = 0.75;
@@ -50,6 +58,12 @@
     });
     $(document).on('lity:close', function (event, instance) {
         document.getElementById("bgVideo").play();
+    });
+    window.addEventListener("load", function () {
+        document.getElementById("loading").style.opacity = 0;
+        setTimeout(function () {
+            document.getElementById("loading").style.display = "none";
+        }, 1000);
     });
 </script>
 
