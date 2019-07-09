@@ -106,36 +106,6 @@ body {
     background-color: #c0392b;
 }
 
-.fa-download {
-    transition-duration: 0.5s;
-    transition-timing-function: linear;
-}
-
-#buttondl:hover .fa-download {
-    transition: 1s;
-    transform: rotate(360deg);
-}
-
-.fa-youtube {
-    transition-duration: 0.5s;
-    transition-timing-function: linear;
-}
-
-#buttonyt:hover .fa-youtube {
-    transition: 1s;
-    transform: rotate(360deg);
-}
-
-.fa-cloud-download-alt {
-    transition-duration: 0.5s;
-    transition-timing-function: linear;
-}
-
-#buttondli:hover .fa-cloud-download-alt {
-    transition: 1s;
-    transform: rotate(360deg);
-}
-
 #loading {
     position: absolute;
     transition: 0.5s;
